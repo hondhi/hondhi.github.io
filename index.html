@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Sample</title>
+    <meta name="description" content="">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -13,33 +14,44 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
   </head>
-  <body>
-    <div id="introduction">
-      <h1>◆INTRODUCTION◆</h1>
-      <image src="my photo.jpg" class="myph"></image>
-      本多昌希
+  <body class="container">
+    <div class="title">
+      <h1 class="title">◆自己紹介◆</h1>
+      <br>
+      <image src="my photo.jpg" class="myph title"></image>
+      <span id="masa">本多昌希</span>
+      <hr>
       <div class="row">
-        <div class="col-sm-1">&nbsp;</div>
-        <div class="col-sm-4 introtopic">
-          <h2>学歴</h2>
+        <div class="col-sm-3 col-xs-6 introtopic">
+          <span class="glyphicon glyphicon-education title"></span>
+          <h3 class="title">学歴</h3>
+          <span class="message"> 2011年 東京私立大森学園卒業<br>
+          2014年 中央大学 文学部教育学専攻入学<br>
+          2018年 同上 卒業見込み<br>
+          &nbsp;</span>
         </div>
-        <div class="col-sm-2　hidden-xs">&nbsp;</div>
-        <div class="col-sm-4 introtopic">
-          <h2>skill</h2>
+        <div class="col-sm-3 col-xs-6 introtopic">
+          <span class="glyphicon glyphicon-star title"></span>
+          <h3 class="title">スキル</h3>
+          <span class="message"> HTML、CSS、Ruby on Rails習得中<br>
+          Ps,Ai,Edius扱うことができます。<br>
+          中学校教諭一種免許状（国語）取得見込み<br>
+          高等学校教諭一種免許状（国語）取得見込み </span>
         </div>
-        <div class="col-sm-1 hidden-xs" >&nbsp;</div>
-      </div>
-      <div class="hidden-xs">&nbsp;</div>
-      <div class="row">
-        <div class="col-sm-1">&nbsp;</div>
-        <div class="col-sm-4 introtopic">
-          a
+        <div class="col-sm-3 col-xs-6 introtopic">
+          <span class="glyphicon glyphicon-headphones title" id="hobby"></span>
+          <h3 class="title">趣味</h3>
+          <span class="message">・バンド<br>
+          GLAY、ロードオブメジャーのコピーバンドをやっていますやっています。
+          パートはドラムです。<br>
+          ・ボウリング<br>
+          ビギナーで腕前はまだまだですが楽しんでやってます。自己ベストは172点です。</span>
         </div>
-        <div class="col-sm-2">&nbsp;</div>
-        <div class="col-sm-4 introtopic">
-          a
+        <div class="col-sm-3 col-xs-6 introtopic">
+          <span class="glyphicon glyphicon-comment title"></span>
+          <h3 class="title">一言</h3>
+          <span class="message"></span>
         </div>
-        <div class="col-sm-1 hidden-xs" >&nbsp;</div>
       </div>
       <div>&nbsp;</div>
     </div>
