@@ -1,4 +1,12 @@
-
+.navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align:center;
+    margin: auto;
+    font-size:300%;
+}
 
 .title{
   /*background-color:#EAEEEF;*/
@@ -11,8 +19,8 @@
 
 img.myph{
   width:150px;
+  height:150px;
   border-radius:100px;
-  
 }
 
 span#masa{
@@ -39,6 +47,23 @@ h3{
 span.message{
   text-align:left;
     display: block;
- margin-left:20px;
+
  margin-right: auto;
+}
+
+span#hobby{
+  margin-top:0px;
+  margin-bottom:5px
+}
+
+/*@media only screen and (max-device-width : 480px) {*/
+/* スマートフォンだけ以下を適用 */
+
+#modal img {
+  width: 80%;
+}
+
+
+.copyright{
+  text-align:right;
 }

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
-    <meta name="description" content="">
+    <title>ほんでぃーのページ</title></title>
+    <meta name="description" content="駆け出しながら、インパクトのあるWebアプリケーションを制作するほんでぃのページです。制作したWebアプリケーションをのいくつか載せています載せています。">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -16,16 +16,22 @@
   </head>
   <body class="container">
     <div class="title">
-      <!--<h1 class="title">◆自己紹介◆</h1>-->
+      <header>
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <a class="navbar-brand">製作者について</a>
+          </div>
+        </nav>
+      </header>
       <br>
       <image src="my photo.jpg" class="myph title"></image>
       <span id="masa">本多昌希</span>
-      <hr>
+      <hr class="hidden-xs">
       <div class="row">
         <div class="col-sm-3 col-xs-6 introtopic">
           <span class="glyphicon glyphicon-education title"></span>
           <h3 class="title">学歴</h3>
-          <span class="message"> 2011年 東京私立大森学園卒業<br>
+          <span class="message"> 2014年 東京私立大森学園卒業<br>
           2014年 中央大学 文学部教育学専攻入学<br>
           2018年 同上 卒業見込み<br>
           &nbsp;</span>
@@ -36,15 +42,15 @@
           <span class="message"> HTML、CSS、Ruby on Rails習得中<br>
           Ps,Ai,Edius扱うことができます。<br>
           中学校教諭一種免許状（国語）取得見込み<br>
-          高等学校教諭一種免許状（国語）取得見込み </span>
+          高等学校教諭一種免許状（国語）取得見込み </span><br>
         </div>
         <div class="col-sm-3 col-xs-6 introtopic">
           <span class="glyphicon glyphicon-headphones title" id="hobby"></span>
           <h3 class="title">趣味</h3>
-          <span class="message">・バンド<br>
+          <span class="message"><バンド><br>
           GLAY、ロードオブメジャーのコピーバンドをやっていますやっています。
           パートはドラムです。<br>
-          ・ボウリング<br>
+          <ボウリング><br>
           ビギナーで腕前はまだまだですが楽しんでやってます。自己ベストは172点です。</span>
         </div>
         <div class="col-sm-3 col-xs-6 introtopic">
@@ -56,10 +62,103 @@
           </span>
         </div>
       </div>
+      <hr>
+      <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <a class="navbar-brand">制作したアプリケーション</a>
+          </div>
+        </nav>
+      <!-- モーダルウィンドウを呼び出すボタン -->
+      <div class="row" id="modal">
+        <div class="col-sm-6">
+          <img src="coming soon2.jpg" data-toggle="modal" data-target="#apply1"></img><br>&nbsp;
+        </div>
+        <!-- モーダルウィンドウの中身 -->
+        <div class="modal fade" id="apply1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Webアプリケーション1</h4>
+              </div>
+              <div class="modal-body">
+                <img src="coming soon.jpg"><br>
+                準備中です。しばしお待ちを。
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-sm-6">
+          <img src="coming soon2.jpg" data-toggle="modal" data-target="#apply2"></img><br>&nbsp;
+        </div>
+        <!-- モーダルウィンドウの中身 -->
+        <div class="modal fade" id="apply2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Webアプリケーション2</h4>
+              </div>
+              <div class="modal-body">
+                <img src="coming soon.jpg"><br>
+                準備中です。しばしお待ちを。
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-sm-6">
+          <img src="coming soon2.jpg" data-toggle="modal" data-target="#apply3"></img><br>&nbsp;
+        </div>
+        <!-- モーダルウィンドウの中身 -->
+        <div class="modal fade" id="apply3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Webアプリケーション3</h4>
+              </div>
+              <div class="modal-body">
+                <img src="coming soon.jpg"><br>
+                準備中です。しばしお待ちを。
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-sm-6">
+          <img src="coming soon2.jpg" data-toggle="modal" data-target="#apply4"></img><br>&nbsp;
+        </div>
+        <!-- モーダルウィンドウの中身 -->
+        <div class="modal fade" id="apply4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Webアプリケーション4</h4>
+              </div>
+              <div class="modal-body">
+                <img src="coming soon.jpg"><br>
+                準備中です。しばしお待ちを。
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>&nbsp;</div>
     </div>
     <footer>
-      
+      <div class="copyright">Masaki Honda (https://github.com/hondhi)</div>
     </footer>
   </body>
 </html>
